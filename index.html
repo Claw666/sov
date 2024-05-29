@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90s Event Scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scoreboard">
+        <h1>Vesper's Quiz Scoreboard</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Round</th>
+                    <th>Team 1</th>
+                    <th>Team 2</th>
+                    <th>Team 3</th>
+                    <th>Team 4</th>
+                    <th>Team 5</th>
+                    <th>Team 6</th>
+                    <th>Team 7</th>
+                </tr>
+            </thead>
+            <tbody id="scoreTable">
+                <tr>
+                    <td>Mime</td>
+                    <td><div class="score-container"><span id="score1-1">0</span><div class="button-group"><button onclick="updateScore(1, 1, 1)">+</button><button onclick="updateScore(1, 1, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score1-2">0</span><div class="button-group"><button onclick="updateScore(1, 2, 1)">+</button><button onclick="updateScore(1, 2, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score1-3">0</span><div class="button-group"><button onclick="updateScore(1, 3, 1)">+</button><button onclick="updateScore(1, 3, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score1-4">0</span><div class="button-group"><button onclick="updateScore(1, 4, 1)">+</button><button onclick="updateScore(1, 4, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score1-5">0</span><div class="button-group"><button onclick="updateScore(1, 5, 1)">+</button><button onclick="updateScore(1, 5, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score1-6">0</span><div class="button-group"><button onclick="updateScore(1, 6, 1)">+</button><button onclick="updateScore(1, 6, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score1-7">0</span><div class="button-group"><button onclick="updateScore(1, 7, 1)">+</button><button onclick="updateScore(1, 7, -1)">-</button></div></div></td>
+                </tr>
+                <tr>
+                    <td>Music</td>
+                    <td><div class="score-container"><span id="score2-1">0</span><div class="button-group"><button onclick="updateScore(2, 1, 1)">+</button><button onclick="updateScore(2, 1, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score2-2">0</span><div class="button-group"><button onclick="updateScore(2, 2, 1)">+</button><button onclick="updateScore(2, 2, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score2-3">0</span><div class="button-group"><button onclick="updateScore(2, 3, 1)">+</button><button onclick="updateScore(2, 3, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score2-4">0</span><div class="button-group"><button onclick="updateScore(2, 4, 1)">+</button><button onclick="updateScore(2, 4, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score2-5">0</span><div class="button-group"><button onclick="updateScore(2, 5, 1)">+</button><button onclick="updateScore(2, 5, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score2-6">0</span><div class="button-group"><button onclick="updateScore(2, 6, 1)">+</button><button onclick="updateScore(2, 6, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score2-7">0</span><div class="button-group"><button onclick="updateScore(2, 7, 1)">+</button><button onclick="updateScore(2, 7, -1)">-</button></div></div></td>
+                </tr>
+                <tr>
+                    <td>Quiz 1</td>
+                    <td><div class="score-container"><span id="score3-1">0</span><div class="button-group"><button onclick="updateScore(3, 1, 1)">+</button><button onclick="updateScore(3, 1, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score3-2">0</span><div class="button-group"><button onclick="updateScore(3, 2, 1)">+</button><button onclick="updateScore(3, 2, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score3-3">0</span><div class="button-group"><button onclick="updateScore(3, 3, 1)">+</button><button onclick="updateScore(3, 3, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score3-4">0</span><div class="button-group"><button onclick="updateScore(3, 4, 1)">+</button><button onclick="updateScore(3, 4, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score3-5">0</span><div class="button-group"><button onclick="updateScore(3, 5, 1)">+</button><button onclick="updateScore(3, 5, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score3-6">0</span><div class="button-group"><button onclick="updateScore(3, 6, 1)">+</button><button onclick="updateScore(3, 6, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score3-7">0</span><div class="button-group"><button onclick="updateScore(3, 7, 1)">+</button><button onclick="updateScore(3, 7, -1)">-</button></div></div></td>
+                </tr>
+                <tr>
+                    <td>Quiz 2</td>
+                    <td><div class="score-container"><span id="score4-1">0</span><div class="button-group"><button onclick="updateScore(4, 1, 1)">+</button><button onclick="updateScore(4, 1, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score4-2">0</span><div class="button-group"><button onclick="updateScore(4, 2, 1)">+</button><button onclick="updateScore(4, 2, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score4-3">0</span><div class="button-group"><button onclick="updateScore(4, 3, 1)">+</button><button onclick="updateScore(4, 3, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score4-4">0</span><div class="button-group"><button onclick="updateScore(4, 4, 1)">+</button><button onclick="updateScore(4, 4, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score4-5">0</span><div class="button-group"><button onclick="updateScore(4, 5, 1)">+</button><button onclick="updateScore(4, 5, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score4-6">0</span><div class="button-group"><button onclick="updateScore(4, 6, 1)">+</button><button onclick="updateScore(4, 6, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score4-7">0</span><div class="button-group"><button onclick="updateScore(4, 7, 1)">+</button><button onclick="updateScore(4, 7, -1)">-</button></div></div></td>
+                </tr>
+                <tr>
+                    <td>Game</td>
+                    <td><div class="score-container"><span id="score5-1">0</span><div class="button-group"><button onclick="updateScore(5, 1, 1)">+</button><button onclick="updateScore(5, 1, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score5-2">0</span><div class="button-group"><button onclick="updateScore(5, 2, 1)">+</button><button onclick="updateScore(5, 2, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score5-3">0</span><div class="button-group"><button onclick="updateScore(5, 3, 1)">+</button><button onclick="updateScore(5, 3, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score5-4">0</span><div class="button-group"><button onclick="updateScore(5, 4, 1)">+</button><button onclick="updateScore(5, 4, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score5-5">0</span><div class="button-group"><button onclick="updateScore(5, 5, 1)">+</button><button onclick="updateScore(5, 5, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score5-6">0</span><div class="button-group"><button onclick="updateScore(5, 6, 1)">+</button><button onclick="updateScore(5, 6, -1)">-</button></div></div></td>
+                    <td><div class="score-container"><span id="score5-7">0</span><div class="button-group"><button onclick="updateScore(5, 7, 1)">+</button><button onclick="updateScore(5, 7, -1)">-</button></div></div></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <td id="total1">0</td>
+                    <td id="total2">0</td>
+                    <td id="total3">0</td>
+                    <td id="total4">0</td>
+                    <td id="total5">0</td>
+                    <td id="total6">0</td>
+                    <td id="total7">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script>
+        const rounds = 5; // Number of rounds (update this if you add more rounds)
+        const teams = 7; // Number of teams
+
+        // Update score function
+        function updateScore(round, team, points) {
+            let scoreElement = document.getElementById(`score${round}-${team}`);
+            let currentScore = parseInt(scoreElement.innerText);
+            scoreElement.innerText = currentScore + points;
+
+            // Update total
+            let totalScore = 0;
+            for (let i = 1; i <= rounds; i++) {
+                totalScore += parseInt(document.getElementById(`score${i}-${team}`).innerText);
+            }
+            document.getElementById(`total${team}`).innerText = totalScore;
+        }
+    </script>
+</body>
+</html>

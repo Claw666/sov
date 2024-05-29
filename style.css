@@ -1,0 +1,103 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #6a1b9a;
+    background-image: url('https://www.transparenttextures.com/patterns/squairy-light.png');
+}
+
+.scoreboard {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+}
+
+h1 {
+    color: #fdd835;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px #d500f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    vertical-align: middle; /* Ensure content is vertically centered */
+}
+
+th {
+    background-color: #ab47bc;
+    color: #ffffff;
+    text-shadow: 1px 1px #000;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score-container span {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: bold; /* Bold scores */
+    font-size: 1.5em; /* Larger font size for scores */
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+button {
+    padding: 3px 7px; /* Smaller buttons */
+    font-size: 0.8em; /* Smaller font size */
+    color: #fff;
+    background-color: #d500f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 2px 0;
+}
+
+button:hover {
+    background-color: #aa00ff;
+}
+
+
+#scoreTable {
+    background-image: url('https://www.transparenttextures.com/patterns/squairy-light.png');
+}
+
+td {
+    background-color: #f3e5f5;
+    color: #6a1b9a;
+    text-shadow: 1px 1px #000;
+    font-weight: bold; /* Bold scores */
+    font-size: 1.5em; /* Larger font size for scores */
+}
+
+tfoot td {
+    background-color: #ab47bc;
+    color: #ffffff;
+    text-shadow: 1px 1px #000;
+    font-weight: bold; /* Bold scores */
+    font-size: 1.5em;
+    
+}
